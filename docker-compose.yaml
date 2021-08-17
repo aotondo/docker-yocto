@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  yocto:
+    container_name: yocto
+    image: yocto:test
+    volumes:
+      - yocto:/home/yocto/
+    cap_add:
+      - NET_ADMIN
+    restart: unless-stopped
+volumes:
+  yocto:
+    external: true
+    
