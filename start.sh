@@ -6,8 +6,6 @@ if [ -z "$(ls -A /home/yocto/poky/)" ]; then
    echo "-- Checking out Hardknott tag --"
    cd /home/yocto/poky/
    git checkout -t origin/hardknott -b my-hardknott
-   exit
 fi
 # Ping localhost to keep container alive
 tail -f /var/log/*
-
